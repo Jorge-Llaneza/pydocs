@@ -33,7 +33,7 @@ The following example opens a file called story.txt, goes through it line by lin
 
 <Code 
 code="
-with open('./docs/story.txt', 'r') as file:
+with open('../docs/story.txt', 'r') as file:
     for line in file:
         print(line.strip())
 " 
@@ -49,7 +49,7 @@ When you want to add text to the end of a file without overwriting its existing 
 <Code 
 code="
 # Add text
-with open('./document/story.txt', 'a') as file:
+with open('../docs/story.txt', 'a') as file:
     file.write('\n\nBy: ChatGPT Nelson')
 " 
 lang="py" 
@@ -64,7 +64,7 @@ If you need to completely replace the content of a file, use the 'w' (write) mod
 <Code 
 code="
 # Rewrite text
-with open('./document/story1.txt', 'w') as file:
+with open('../docs/story1.txt', 'w') as file:
     file.write('\n\nBy: PyDocs')
 " 
 lang="py" 
